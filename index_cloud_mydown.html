@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
   <link rel="icon" href="qky2.ico">
-  <title>云盘</title>
+  <title>云盘-我的下载</title>
 
   <link href="js/bootstrap/3.3.0/css/bootstrap.css" rel="stylesheet">
 
@@ -29,15 +29,15 @@
 
   <div class="container clear pt0 pl0 pr0 pb20">
     <div class="res_cadr cloudleft fl">
-      <a class="res_cloud_nav clear active" href="index_cloud.html">
+      <a class="res_cloud_nav clear " href="index_cloud.html">
         <i class="qkyicon_res fl">&#xe6e6;</i>
         <span class="fl">我的文档</span>
       </a>
-      <a class="res_cloud_nav clear" href="index_cloud_mysend.html">
+      <a class="res_cloud_nav clear " href="index_cloud_mysend.html">
         <i class="qkyicon_res fl">&#xe6e8;</i>
         <span class="fl">我的发布</span>
       </a>
-      <a class="res_cloud_nav clear" href="index_cloud_mydown.html">
+      <a class="res_cloud_nav clear active" href="index_cloud_mydown.html">
         <i class="qkyicon_res fl">&#xe706;</i>
         <span class="fl">我的下载</span>
       </a>
@@ -46,16 +46,12 @@
     <div class="res_cadr cloudright fr">
 
       <div class="res_cadr cloudbanner">
-        <div class="clear res_cloud_ban1">
-          <div class="col-sm-7 fl pa0">
-            <a class="btn btn-primary mr10  po_r">
-              <i class="qkyicon_res mr5">&#xe64a;</i>上传文件
-            <input type="file" class="ycfile">
-            </a>
-            <a class="btn btn-default" data-toggle="modal" data-target="#addfile">
-              <i class="qkyicon_res mr5">&#xe634;</i>新建文件夹</a>
-          </div>
-          <div class="col-sm-5 fr pa0">
+        <div class="clear">
+            <div class="col-sm-5 fl pa0 mt5 mb5">
+                <a  class="res_type active">全部</a><a  class="res_type">文档</a><a  class="res_type">图片</a>
+                <a  class="res_type">视频</a><a  class="res_type">音乐</a><a  class="res_type">其他</a>
+              </div>
+          <div class="col-sm-5 fr pa0 mb10">
             <div class="input-group">
               <input type="text" class="form-control" placeholder="请输入关键字搜索">
               <span class="input-group-btn">
@@ -64,69 +60,15 @@
             </div>
           </div>
         </div>
-        <div class="clear res_cloud_ban2">
-          <div class="col-sm-7 pa0 clear">
-            <a class="res_path"><i class="qkyicon_14">&#xe604;</i></a>
-            <a class="res_path">文件夹1</a> <a class="res_path">文件夹1-2</a>
-          </div>
-          <div class="col-sm-5 fr pa0">
-            <a  class="res_type active">全部</a><a  class="res_type">文档</a><a  class="res_type">图片</a>
-            <a  class="res_type">视频</a><a  class="res_type">音乐</a><a  class="res_type">其他</a>
-          </div>
-        </div>
       </div>
 
       <div class="res_cadr cloudtable">
           <table class="table table-condensed  table-hover">
               <thead><tr>
                 <th  width="16px"><label class="checkbox-qky mb0 parent" lj="gl" isc="no"><a class="checkbox_a ma0"><i class="qkyicon_14"></i></a></label></th>
-                <th width="50%">全选</th><th>类型</th><th>大小</th><th>修改日期</th>
+                <th width="45%">全选</th><th width="10%"></th><th >来源</th><th>大小</th><th>修改日期</th>
               </tr></thead>
                   <tbody>
-                      <tr >
-                          <td><label class="checkbox-qky mb0 child" lj="gl"><a class="checkbox_a mr0"><i class="qkyicon_14"></i></a></label></td>
-                          <td class="res_tablist clear">
-                            <img src="images/office_icon/folder.png" alt="">
-                            <span class="dian3 resname">资源平台</span>
-                          </td>
-                          <td>固定文件夹</td>
-                          <td></td>
-                          <td></td>
-                      </tr>
-                      <tr >
-                          <td><label class="checkbox-qky mb0 child" lj="gl"><a class="checkbox_a mr0"><i class="qkyicon_14"></i></a></label></td>
-                          <td class="res_tablist"><img src="images/office_icon/folder.png" alt=""><span class="dian3 resname">名师工作室</span></td>
-                          <td>固定文件夹</td>
-                          <td></td>
-                          <td></td>
-                      </tr>
-                      <tr >
-                          <td><label class="checkbox-qky mb0 child" lj="gl"><a class="checkbox_a mr0"><i class="qkyicon_14"></i></a></label></td>
-                          <td class="res_tablist">
-                            <img src="images/office_icon/folder.png" alt=""><span class="dian3 resname">小学教研活动</span>
-                            <div class="col-sm-10 resname_input">
-                                <div class="input-group">
-                                    <input type="text" class="form-control t_c" value="资源平台">
-                                    <span class="input-group-btn">
-                                        <button class="btn btn-primary" type="button"  title="确定"> <i class="qkyicon_14">&#xe619;</i> </button>
-                                    </span>
-                                </div>
-                            </div>
-                          </td>       
-                          <td class="res_tool clear">
-                           <span class="fl mr5">自建文件夹</span>   
-                          <a class="toolbtn more  qkyicon_14   fl">&#xe61b;
-                          <ul class="res_moretool">
-                              <li class="rename">重命名</li>
-                              <li class="remove" data-toggle="modal" data-target="#movefile" >移动到</li>
-                              <li class="clone" data-toggle="modal" data-target="#movefile">复制到</li>
-                              <li class="delete" data-toggle="modal" data-target="#delete">删除</li>
-                          </ul></a>
-                          </td>
-                          <td></td>
-                          <td>2016-12-14 16:45:12</td>
-                      </tr>
-
                       <tr >
                           <td><label class="checkbox-qky mb0 child" lj="gl"><a class="checkbox_a mr0"><i class="qkyicon_14"></i></a></label></td>
                           <td class="res_tablist">
@@ -140,9 +82,10 @@
                                 </div>
                             </div>
                           </td>
+                          
                           <td class="res_tool">
                             <a class="toolbtn qkyicon_res fz_16" title="点击下载">&#xe60b;</a>
-                            <a class="toolbtn more qkyicon_14 fz_14 ml10 ">&#xe61b;
+                            <a class="toolbtn more qkyicon_14 fz_14 ml5 ">&#xe61b;
                               <ul class="res_moretool">
                                   <li class="rename" >重命名</li>
                                   <li class="remove" data-toggle="modal" data-target="#movefile">移动到</li>
@@ -150,7 +93,7 @@
                                   <li class="delete" data-toggle="modal" data-target="#delete">删除</li>
                               </ul>
                             </a>
-                          </td>
+                          </td><td>资源平台</td>
                           <td>380.91KB</td>
                           <td>2016-12-14 16:45:12</td>
                       </tr>
@@ -177,7 +120,7 @@
                                   <li class="delete" data-toggle="modal" data-target="#delete">删除</li>
                                 </ul>
                               </a>
-                          </td>
+                          </td><td>资源平台</td>
                           <td>467.97KB</td>
                           <td>2016-12-14 16:45:12</td>
                       </tr>
@@ -204,7 +147,7 @@
                                   <li class="delete" data-toggle="modal" data-target="#delete">删除</li>
                                 </ul>
                               </a>
-                          </td>
+                          </td><td>资源平台</td>
                           <td>467.97KB</td>
                           <td>2016-12-14 16:45:12</td>
                       </tr>
@@ -231,7 +174,7 @@
                                   <li class="delete" data-toggle="modal" data-target="#delete">删除</li>
                                 </ul>
                               </a>
-                          </td>
+                          </td><td>资源平台</td>
                           <td>467.97KB</td>
                           <td>2016-12-14 16:45:12</td>
                       </tr>
@@ -258,7 +201,7 @@
                                   <li class="delete" data-toggle="modal" data-target="#delete">删除</li>
                                 </ul>
                               </a>
-                          </td>
+                          </td><td>资源平台</td>
                           <td>467.97KB</td>
                           <td>2016-12-14 16:45:12</td>
                       </tr>

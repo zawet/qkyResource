@@ -27,7 +27,7 @@
 .res_btn{ display: block; background: #f9b154; color: #fff; font-size: 20px; width: 100%; padding: 10px 0; text-align: center; margin: 10px 0; border-radius: 6px; }
 .res_btn:hover{ background: #ec9f3b; text-decoration:none; color: #fff; cursor: pointer;}
 
-.res_cadr{ background: #fff; border: 1px solid #eee; padding: 10px; box-sizing: border-box; margin-top:16px; height: 330px;overflow: auto;}
+.res_cadr{ background: #fff; box-shadow: 0px 2px 5px #eee; border: 1px solid #eee; padding: 10px; box-sizing: border-box; margin-top:16px; height: 330px;overflow: auto;}
 .res_cadr.left{ width:750px; }
 .res_cadr.right{ width:307px; }
 
@@ -69,5 +69,47 @@
 .res_gxtxt span{ display: block;font-size: 13px; padding: 5px 0 3px;}
 .res_gxtxt label{ display: block; color: #04aef7; font-size: 15px; margin: 0;}
 
-.res_cadr.cloudleft{ width:260px; height: auto; min-height: 500px; }
-.res_cadr.cloudright{ width:797px; height: auto; }
+.res_cadr.cloudleft{ width:260px; height: auto; min-height: 500px; padding: 0; }
+.res_cadr.cloudright{ width:797px; height: auto; padding: 0; background:none;  border: none; }
+.res_cadr.cloudbanner{ margin-top: 0;height: auto; padding-bottom: 0;}
+.res_cadr.cloudbanner a{ text-decoration: none;}
+.res_cadr.cloudtable{ height: auto; min-height:560px; padding:5px; overflow: hidden;}
+
+.res_cloud_nav{ display: block; width: 100%; line-height: 24px; padding: 15px 20px;box-sizing: border-box;  color: #535353;
+     font-size: 16px; border-bottom: 1px solid #eee; background: #fafafa;}
+.res_cloud_nav i{ font-size:22px ; color: #f9b154; margin-right: 5px;}
+.res_cloud_nav:hover,.res_cloud_nav.active{ color: #04aef7; background: #e5f7fe; text-decoration: none; cursor: pointer; border-color:#d3eef8;}
+.res_cloud_nav:hover i,.res_cloud_nav.active i{ color: #04aef7; font-weight: bold;}
+
+.res_cloud_ban2{ padding: 10px 0 ; border-top: 1px  dashed #ddd; margin: 10px -10px  0; background: #f9f9f9; }
+.res_path{ color: #535353; cursor: pointer;  display: block; float: left; line-height: 20px; padding: 0 10px; border-right: 1px solid #ddd;}
+.res_path:hover{ color: #04aef7;}
+.res_type{color: #04aef7; cursor: pointer;  display: block; float: left; line-height: 20px; padding: 0 10px;}
+.res_type:hover,.res_type.active{ color: #0a6b94; font-weight: bold;}
+
+.cloudtable .table>thead >tr >th{ background: #e5f7fe; color: #04aef7; border-right: 1px solid #fff;}
+.cloudtable .table>tbody >tr >td{ line-height: 30px;color: #999 !important; cursor: pointer;    border-top:none;    border-bottom: 1px solid #eee;}
+.cloudtable .table .res_tablist{line-height: 30px; color: #737373 !important; }
+.cloudtable .table .res_tablist img{ width: 28px; float: left; margin-right: 5px;}
+.cloudtable .table .res_tablist span.resname{ width: 80%; line-height: 30px; float: left; display: block;}
+
+.res_tool{ position: relative;}
+.res_tool .toolbtn{ display:none; color:#04aef7; text-decoration: none;}
+.cloudtable .table>tbody >tr:hover .res_tool .toolbtn{ display: inline-block;}
+.res_moretool{ display: none; position: absolute; width: 80px; padding: 0; margin: 0; list-style:none;  top:80%; right: 0; z-index: 666;
+     background: #fff; border: 1px solid #ddd;}
+.res_moretool li{list-style:none; width: 100%; padding: 5px 0; line-height: 20px; text-align: center; color: #737373; font-size: 13px;}
+.res_moretool li:hover{ background: #f5f5f5; color: #27bbfa;}
+.res_tool .toolbtn.more:hover .res_moretool{ display: block;} 
+
+.resname_input{ display: none;}
+.resname_input .btn{ padding: 4px 5px;}
+.resname_input .btn.btn-danger{ background: #f16269; border-color: #f16269;}
+
+.filelist{ width: 100%; padding-left:10px; box-sizing: border-box; line-height: 30px; }
+.filelist .clear{border-bottom: 1px dashed #ddd; background: #f9f9f9; padding: 5px;}
+.filelist label{ margin-top: 2px;}
+.filelist img{ width: 30px; margin:0 5px 0 10px;}
+.filelist span{ line-height: 32px; max-width:80% ;}
+
+
