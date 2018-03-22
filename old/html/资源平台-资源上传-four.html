@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>资源上传</title>
+<link href="../css/frame_type_1.0.css" rel="stylesheet" type="text/css"/>
+<link href="../css/space.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/lrtk.js"></script>
+
+</head>
+<body>
+<div class="qky_header">
+  <div class="header2">
+    <div class="qky_top_box">
+      <div class="qky_logo"><img src="../images/top/logo2.png"/></div>
+      <div class="qky_top_search"><a href="#">全课测试学校</a> <a href="#">张三 老师</a><a href="#">安全退出</a><a href="#">设置</a></div>
+      <div class="qky_top_button"><a><i class="qkyicon">&#xe600;</i>返回桌面</a></div>
+      <div class="clear"></div>
+    </div>
+  </div>
+  <div class="header1">
+    <div class="qky_top_box">
+      <ul class="qky_top_navs top_zypt">
+        <li ><a class="cur">资源平台</a></li>
+        <li class="xl-nav"><a class="morenav">公共资源库</a>
+          <div class="sub_con sub_con-c"> <a href="#" class="ico_ind">平台首页</a> <a class="ico_per">个人资源库</a> <a class="ico_sour">公共资源库</a> <a href="#" class="ico_tiku">题库</a> </div>
+        </li>
+      </ul>
+      <div class="qky_tab fr w_co"><i class="qkyicon ">&#xe69c;</i>帮助</div>
+      <div class="qky_tab fr w_co"><i class="qkyicon ">&#xe61d;</i>全课云APP</div>
+      <div class="qky_tab fr w_co"><i class="qkyicon fz_4">&#xe616;</i></div>
+      <div class="clear"></div>
+    </div>
+  </div>
+</div> 
+
+<div class="main">
+	<div class="bread_box">全课云 > 资源平台 ><span> 发布资源</span></div>
+    <div class="zypt_up_box">
+    <div class="zypt_up_tit"><span class="tit_icon"></span><span>发布资源到平台</span><div class="clear"></div></div>
+	<!--结构修改+样式新增 2016 1 28-->
+    <div class="zypt_up_butbox">
+	<a class="up_but" href="资源平台-资源上传_choose.html">上传我的资源</a>
+	</div>
+	<!--结构修改 2016 1 28-->
+    <div class="zypt_up_say">从我的电脑选择要上传的文档：按住CTRL可以上传多份资源</div>
+    <div class="zypt_up_info">
+        <div class="info_tit">资源上传须知：</div>
+        <div class="info_list"><span class="quan">1</span><span>您可以上传日常积累和撰写的资料或资源，如课件、习题，每次可上传≤20份，每份≤200MB，支持多种文档类型。</span><div class="clear"></div></div>
+        <div class="info_list">
+            <span class="quan">2</span><span>资源上传格式：</span><div class="clear"></div>
+            <div class="geshi">
+                <h4 style="margin-left:0;">MS Office文档：</h4><i class="doc"></i><a>doc，docx；</a> <i class="ppt"></i><a>ppt，pptx；</a> <i  class="xls"></i><a>xls，xlsx </a><h4>|</h4>
+                <h5> PDF：</h5><i class="pdf"></i><a>pdf</a><h4>|</h4>
+                <h5>纯文本：</h5><i class="txt"></i><a>txt</a><h4>|</h4>
+                <h5>flash：</h5><i class="flv"></i><a>flv，swf</a><h4>|</h4><div class="clear"></div>
+                <h5>音频：</h5><i class="mp3"></i><a>mp3，aac</a><h4>|</h4>
+                <h5>视频：</h5><i class="mp4"></i><a>mp4，mpg，avi，wmv</a><h4>|</h4>
+                <h5>图片：</h5><i class="jpg"></i><a>jpg，png，gif</a><h4>|</h4>
+                <h5>电子书：</h5><i class="epub"></i><a>epub</a>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>    
+   
+<div class="foot-bg">
+<div class="footer"><p>Copyright1999-2015 全通教育股份有限公司 版权所有</p>
+<p>中华人民共和国增值电信业务经营许可证  经营许可证编号：A2.B1.B2-20100001</p>
+</div>
+</div>
+<script>
+function footinbottom(){
+	var body_h=$(".main").outerHeight()+$(".header").outerHeight()+$(".foot-bg").outerHeight();
+	if($(window).height()>=body_h){
+		var foot_mt=$(window).height()-body_h;
+	  $(".foot-bg").css("margin-top",foot_mt+"px");
+	}
+	}
+$(window).load(function(){footinbottom();});
+$(window).on('resize',function(){footinbottom();});
+</script>
+</body>
+</html>
