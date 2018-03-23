@@ -59,12 +59,16 @@
 
 @font-face {
   font-family: 'qkyres';  /* project id 599419 */
-  /* src: url('//at.alicdn.com/t/font_599419_fh3h28xc6wr60f6r.eot');
-  src: url('//at.alicdn.com/t/font_599419_fh3h28xc6wr60f6r.eot?#iefix') format('embedded-opentype'),
-  url('//at.alicdn.com/t/font_599419_fh3h28xc6wr60f6r.woff') format('woff'),
-  url('//at.alicdn.com/t/font_599419_fh3h28xc6wr60f6r.ttf') format('truetype'),
-  url('//at.alicdn.com/t/font_599419_fh3h28xc6wr60f6r.svg#iconfont') format('svg'); */
+  src: url('//at.alicdn.com/t/font_599419_74s88v8l8n83q5mi.eot');
+  src: url('//at.alicdn.com/t/font_599419_74s88v8l8n83q5mi.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_599419_74s88v8l8n83q5mi.woff') format('woff'),
+  url('//at.alicdn.com/t/font_599419_74s88v8l8n83q5mi.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_599419_74s88v8l8n83q5mi.svg#iconfont') format('svg');
 
+ 
+}
+@font-face {
+  font-family: 'qkyress';  /* project id 599419 */
   src: url('../iconfont/res/iconfont.eot'); /* IE9*/
   src: url('../iconfont/res/iconfont.eot#iefix') format('embedded-opentype'), /* IE6-IE8 */
   url('../iconfont/res/iconfont.woff') format('woff'), /* chrome, firefox */

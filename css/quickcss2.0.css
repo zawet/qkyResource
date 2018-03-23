@@ -18,8 +18,9 @@
 .dian3{ overflow:hidden;text-overflow:ellipsis; white-space:nowrap;}/*单行文字超出显示...*/
 .ycfile{position: absolute;width: 100%;height: 100%;left: 0;top: 0;filter: alpha(opacity=0);opacity: 0;z-index: 66;cursor: pointer;}/*完全透明的上传控件*/
 .r90{transform:rotate(90deg); -webkit-transform:rotate(90deg);-moz-transform:rotate(90deg);}/*旋转90度  ie8以及以下没作用*/
+.r45{transform:rotate(45deg); -webkit-transform:rotate(45deg);-moz-transform:rotate(45deg);}/*旋转90度  ie8以及以下没作用*/
 .r180{transform:rotate(-180deg); -webkit-transform:rotate(-180deg);-moz-transform:rotate(-180deg); display:inline-block;}
-.r180,.r90,.trn{-webkit-transition: all 0.25s ease-out 0s;-moz-transition: all 0.25s ease-out 0s;transition: all 0.25s ease-out 0s;}/*过度执行动画  ie8以及以下没作用*/
+.r180,.r90,.r45,.trn{-webkit-transition: all 0.25s ease-out 0s;-moz-transition: all 0.25s ease-out 0s;transition: all 0.25s ease-out 0s;}/*过度执行动画  ie8以及以下没作用*/
 .height30{ height:30px; padding:4px 15px;}
 .height30_line{ height:30px; line-height:30px;}
 .height34{ height:34px; padding:6px 15px;}

@@ -1,4 +1,4 @@
-
+/*首页*/
 .res_ad{ width: 100%; height:320px; background: url("../images/adbg.png") no-repeat 50% 0; background-size: cover;}
 .res_ad .container{ height: 100%;}
 .res_navs{ position: absolute; bottom: 0; left: 0;}
@@ -27,9 +27,9 @@
 .res_btn{ display: block; background: #f9b154; color: #fff; font-size: 20px; width: 100%; padding: 10px 0; text-align: center; margin: 10px 0; border-radius: 6px; }
 .res_btn:hover{ background: #ec9f3b; text-decoration:none; color: #fff; cursor: pointer;}
 
-.res_cadr{ background: #fff; box-shadow: 0px 2px 5px #eee; border: 1px solid #eee; padding: 10px; box-sizing: border-box; margin-top:16px; height: 330px;overflow: auto;}
-.res_cadr.left{ width:750px; }
-.res_cadr.right{ width:307px; }
+.res_cadr{ background: #fff; box-shadow: 0px 2px 5px #eee; border: 1px solid #eee; padding: 10px; box-sizing: border-box; margin-top:16px; overflow: auto;}
+.res_cadr.left{ width:750px; height: 330px;}
+.res_cadr.right{ width:307px; height: 330px;}
 
 .res_title{ width: 100%; background:url("../images/tit1.png") no-repeat 0 0; background-size: cover; height: 46px; line-height: 46px; padding: 0 15px; box-sizing: border-box;}
 .res_title.two{ background-image: url("../images/tit2.png")}
@@ -69,6 +69,62 @@
 .res_gxtxt span{ display: block;font-size: 13px; padding: 5px 0 3px;}
 .res_gxtxt label{ display: block; color: #04aef7; font-size: 15px; margin: 0;}
 
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {color:#04aef7;}
+.nav-tabs > li > a {color: #737373;}
+
+.res_library{ padding: 15px;}
+.res_libname{ position: relative; width: 100%; padding-bottom: 15px;border-bottom: 1px dashed #eee; }
+.res_libname label{ margin: 0; font-size: 18px; line-height: 30px;}
+.res_libname label span { margin-right: 10px;}
+
+.res_libchoose_box{  box-sizing: border-box;  padding: 10px 10px 0; background: #fafafa; border: 1px dashed #eee; border-top: none; display: none;}
+.res_libchoose_list{ padding: 8px 0; line-height: 30px; background: #fff; margin-bottom: 10px; box-shadow: 0 1px 3px #ddd; border-radius: 4px;}
+.res_libchoose_type{  color: #535353; font-size: 16px; border-right: 1px solid #ddd;}
+.res_libchoose_type i{ font-size:20px ; margin:0 5px; color: #04aef7;}
+.res_libchoose_li{ display: block; padding: 0 5px; cursor: pointer; text-decoration: none; color:#737373; margin-left: 10px; line-height: 32px; border-radius: 4px;}
+.res_libchoose_li:hover{ background: #e5f7fe; text-decoration: none;}
+.res_libchoose_li.active{ background: #04aef7; color: #fff;}
+.res_libchoose_more{line-height: 32px; margin-right:10px; cursor: pointer; text-decoration: none;}
+
+.res_lib_catalog{ width:25%; box-sizing: border-box; padding-right: 15px; border-right: 1px solid #eee; margin: 15px 0 0;}
+
+.res_tree_title{ background: #04aef7; color: #fff; text-align: center; padding: 10px 0; font-size:16px ;}
+.res_tree,.res_tree li{list-style: none; padding: 0; margin: 0; width: 100%;}
+.res_tree li a{ cursor: pointer; display: block;}
+.res_tree li a:hover{ text-decoration: none;}
+
+.res_tree_one{ color: #04aef7; font-size:14px; padding: 8px 10px;border-bottom: 1px dashed #eee;  font-weight: bold;}
+.res_tree_one b{ width: 20px; height: 20px;font-size:14px; font-weight: inherit;background: #04aef7; color: #fff; text-align: center; line-height: 20px; display: inline-block;}
+.res_tree_one b{-webkit-transition: all 0.25s ease-out 0s;-moz-transition: all 0.25s ease-out 0s;transition: all 0.25s ease-out 0s;}/*过度执行动画  ie8以及以下没作用*/
+.res_tree_one b.yuan{ border-radius: 50%; background: #f55252}
+.res_leaf{ padding:0 10px; display: none;}
+.res_leaf.open{ display: block;}
+.res_tree_two{padding: 5px 0 5px 25px; border-bottom: 1px dashed #eee; color: #57cafc;}
+.res_tree_two b{ width: 5px;height: 5px; margin-right: 5px; border-radius: 50%;background: #04aef7; display: inline-block;}
+
+.res_lib_main{ width:75%; box-sizing: border-box;   margin: 15px 0 0;  border-left: 1px solid #eee; padding-left:1.5%; }
+.res_lib_maintitle{ border-bottom: 1px dashed #eee; padding-bottom: 10px;}
+.res_lib_types{ padding: 8px 10px; border-radius:0 0 0 4px; background: #f9f9f9;}
+.res_lib_types>li>a{ padding: 5px 15px; color: #666;}
+.res_lib_types > li.active > a, .res_lib_types > li.active > a:hover, .res_lib_types > li.active > a:focus {background: #f9b154; color: #fff;}
+
+.res_lib_style{ background: #f5f5f5; border-top: 1px dashed #eee; padding: 4px 0;}
+.res_lib_style label span{ font-size: 12px; color: #737373;}
+
+.res_list{ padding:5px; background: #fafafa; box-shadow: 0 1px 3px #ddd; margin-bottom: 15px; border-radius: 4px;}
+.res_list img{  width: 70px; padding-right: 10px;}
+.list_txt label{ display: block; color: #333; font-size: 16px; font-weight: normal;  padding-top: 5px; margin-bottom: 0;}
+.list_txt label:hover{ color: #04aef7;}
+.list_txt span{display: block; font-size:14px ; color: #737373; padding-top: 5px;}
+.list_info{ color: #999;}
+.list_info span{ margin-left:10px;}
+.list_bottominfo{  padding: 5px 10px; margin-top: 10px; color: #737373;}
+.list_bottominfo >i{ color:#04aef7;}
+.list_bottominfo span i{ color: #ec9f3b;}
+.res_list:hover{ background: #f1f1f1; cursor: pointer;}
+
+/*云盘*/
 .res_cadr.cloudleft{ width:260px; height: auto; min-height: 500px; padding: 0; }
 .res_cadr.cloudright{ width:797px; height: auto; padding: 0; background:none;  border: none; }
 .res_cadr.cloudbanner{ margin-top: 0;height: auto; padding-bottom: 0;}

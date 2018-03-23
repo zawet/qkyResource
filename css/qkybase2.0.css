@@ -652,8 +652,8 @@ a.checkbox_a{display:block; width:16px; height:16px; border:1px solid #dadada; b
 
 
 /*主色调定义*/
-a {color: #00BBBD;}
-a:hover,a:focus {color: #008283;}
+a {color: #27b0f2;}
+a:hover,a:focus {color: #27b0f2;}
 
 .mian_background{ background:#04aef7}/*主色调*/
 .assist_background{ background:#27b0f2}/*辅色调*/
@@ -682,7 +682,7 @@ a:hover,a:focus {color: #008283;}
 
 .mian_line{ border:1px solid #04aef7}/*边框次色调*/
 .ff_background{ background:#fff!important;}
-.nav_color{color:#0A7E07;}
+.nav_color{color:#04aef7;}
 .nav_qkymc a{ color:#04aef7;} 
 .box_ff{ border:1px solid #d8d8d8; background:#fff;}
 
