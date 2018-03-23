@@ -93,6 +93,9 @@
 .cloudtable .table .res_tablist img{ width: 28px; float: left; margin-right: 5px;}
 .cloudtable .table .res_tablist span.resname{ width: 80%; line-height: 30px; float: left; display: block;}
 
+
+.res_alltool{ display: none; color: #27bbfa; margin-right: 5px; cursor: pointer; text-decoration: none;}
+.res_alltool:hover{ color: #0a6b94;}
 .res_tool{ position: relative;}
 .res_tool .toolbtn{ display:none; color:#04aef7; text-decoration: none;}
 .cloudtable .table>tbody >tr:hover .res_tool .toolbtn{ display: inline-block;}
@@ -111,5 +114,7 @@
 .filelist label{ margin-top: 2px;}
 .filelist img{ width: 30px; margin:0 5px 0 10px;}
 .filelist span{ line-height: 32px; max-width:80% ;}
+
+
 
 

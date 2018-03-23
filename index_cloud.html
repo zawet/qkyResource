@@ -80,11 +80,17 @@
           <table class="table table-condensed  table-hover">
               <thead><tr>
                 <th  width="16px"><label class="checkbox-qky mb0 parent" lj="gl" isc="no"><a class="checkbox_a ma0"><i class="qkyicon_14"></i></a></label></th>
-                <th width="50%">全选</th><th>类型</th><th>大小</th><th>修改日期</th>
+                <th width="50%">全选
+                  <a class="res_alltool ml10" data-toggle="modal" data-target="#delete">删除</a>
+                  <a class="res_alltool allrename">重命名</a>
+                  <a class="res_alltool" data-toggle="modal" data-target="#movefile">复制</a>
+                  <a class="res_alltool" data-toggle="modal" data-target="#movefile">移动</a>
+                  
+                </th><th>类型</th><th>大小</th><th>修改日期</th>
               </tr></thead>
                   <tbody>
                       <tr >
-                          <td><label class="checkbox-qky mb0 child" lj="gl"><a class="checkbox_a mr0"><i class="qkyicon_14"></i></a></label></td>
+                          <td></td>
                           <td class="res_tablist clear">
                             <img src="images/office_icon/folder.png" alt="">
                             <span class="dian3 resname">资源平台</span>
@@ -94,7 +100,7 @@
                           <td></td>
                       </tr>
                       <tr >
-                          <td><label class="checkbox-qky mb0 child" lj="gl"><a class="checkbox_a mr0"><i class="qkyicon_14"></i></a></label></td>
+                          <td></td>
                           <td class="res_tablist"><img src="images/office_icon/folder.png" alt=""><span class="dian3 resname">名师工作室</span></td>
                           <td>固定文件夹</td>
                           <td></td>
@@ -400,7 +406,28 @@
         navli_j: qt
       });
 
-      rach.rach_run(function(t){},function(t){});	
+      rach.rach_run(function(t){},function(t){
+        if($(".cloudtable .checkbox-qky.select").length>0){
+          $(".res_alltool").show();
+        }else{
+          $(".res_alltool").hide();
+        }
+      });	
+
+      $(".allrename").click(function(){
+        $(".rename").each(function(i){
+          if($(this).attr("isc")=="no"){
+            $(this).parents("tr").find(".resname").hide();
+            $(this).parents("tr").find(".resname_input").fadeIn(200).find("input").val($(this).parents("tr").find(".resname").html());
+            $(this).attr("isc","yes");
+          }else{
+            $(this).parents("tr").find(".resname_input").hide();
+            $(this).parents("tr").find(".resname").fadeIn(200).html($(this).parents("tr").find(".resname_input input").val());
+            $(this).attr("isc","no");
+          }
+        })
+        
+      });
   
       $(".rename").attr("isc","no").on("click",function(){
         if($(this).attr("isc")=="no"){
