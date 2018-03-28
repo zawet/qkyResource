@@ -36,11 +36,11 @@
           <i class="qkyicon_res">&#xe637;</i> 返回</a>
       </div>
 
-      <a class="po_r btn btn-primary mr15 btn-xl pt10 pb10">
+      <a class="po_r btn btn-primary mr15 btn-lg pt10 pb10">
         <i class="qkyicon_res fz_20">&#xe64a;</i> 本地上传
         <input type="file" class="ycfile">
       </a>
-      <a class="btn btn-primary btn-xl pt10 pb10" data-toggle="modal" data-target="#mycloud">
+      <a class="btn btn-primary btn-lg pt10 pb10" data-toggle="modal" data-target="#mycloud">
         <i class="qkyicon_res fz_20">&#xe635;</i> 从我的云盘选择</a>
       <div class="res_updata_tips">
         <p class="co_53 fz_16 mb5">资源上传须知：</p>
@@ -344,7 +344,10 @@
             </div>
           </div>
         </div>
-
+<div class="t_c">
+  <a class="btn btn-primary btn-lg pt10 pb10 mr10">确定发布</a>
+  <a class="btn btn-default btn-lg pt10 pb10">取消发布</a>
+</div>
       </div>
     </div>
 
@@ -568,7 +571,7 @@
         navli_j: qt
       });
       rach.rach_run(function (t) {}, function (t) {});
-      
+
 //弹框云盘交互
       $(".cloudtable tbody tr.file").click(function () {
         $(this).addClass("active").siblings().removeClass("active");
