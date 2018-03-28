@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="qky2.ico">
+  <title>我的资源库</title>
+
+  <link href="js/bootstrap/3.3.0/css/bootstrap.css" rel="stylesheet">
+
+  <!--全课云基础样式覆盖-->
+  <link href="css/iconfont2.0.css" rel="stylesheet">
+  <link href="css/qkybase2.0.css" rel="stylesheet">
+  <link href="css/quickcss2.0.css" rel="stylesheet">
+  <link href="css/res.css" rel="stylesheet">
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="qkybody">
+  <div id="qkynav"></div>
+  <div class="container clear pa0">
+
+    <div class="res_cadr ">
+      <div class="res_sendtit clear">
+        <i class="qkyicon_res fz_22">&#xe6e9;</i>发布资源
+        <a href="index_my.html" class="fr">
+          <i class="qkyicon_res">&#xe637;</i> 返回</a>
+      </div>
+
+      <a class="po_r btn btn-primary mr15 btn-xl pt10 pb10">
+        <i class="qkyicon_res fz_20">&#xe64a;</i> 本地上传
+        <input type="file" class="ycfile">
+      </a>
+      <a class="btn btn-primary btn-xl pt10 pb10" data-toggle="modal" data-target="#mycloud">
+        <i class="qkyicon_res fz_20">&#xe635;</i> 从我的云盘选择</a>
+      <div class="res_updata_tips">
+        <p class="co_53 fz_16 mb5">资源上传须知：</p>
+        <p>您可以上传日常积累和撰写的资料或资源，如课件、习题，每次可上传≤20份，每份≤200MB，支持多种文档类型。支持上传的格式如下：</p>
+        <div class="clear res_updata_tipstype">
+          <span>
+            <img src="images/office_icon/word.png" alt="">doc、docx</span>
+          <span>
+            <img src="images/office_icon/ppt.png" alt="">ppt、pptx</span>
+          <span>
+            <img src="images/office_icon/excel.png" alt="">xls、xlsx</span>
+          <span>
+            <img src="images/office_icon/pdf.png" alt="">pdf</span>
+          <span>
+            <img src="images/office_icon/txt.png" alt="">txt</span>
+          <span>
+            <img src="images/office_icon/video.png" alt="">flv、swfmp4、mpg、avi、wmv</span>
+          <span>
+            <img src="images/office_icon/mp3.png" alt="">mp3、aac</span>
+          <span>
+            <img src="images/office_icon/jpg.png" alt="">jpg、png、gif</span>
+        </div>
+      </div>
+      <!-- <div class="res_updata_file ">
+        <div class="clear mb5">
+        <span class="fl">朱自清《背影》原文、教案.doc</span>
+        <b class="fr">45%</b>
+        </div>
+        <div class="progress">
+              <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%">
+                <span class="sr-only">45% Complete</span>
+              </div>
+        </div>
+      </div> -->
+      <div class="res_updata_file ">
+        <div class="clear mb5">
+          <span class="fl">朱自清《背影》原文、教案.doc</span>
+          <b class="fr">上传完成</b>
+        </div>
+        <div class="progress">
+          <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"
+            style="width: 100%">
+            <span class="sr-only">100% Complete</span>
+          </div>
+        </div>
+      </div>
+
+
+      <div class=" inputbox clear">
+        <div class="col-sm-6">
+          <div class="res_input">
+            <label>资源名称：</label>
+            <input type="text" class="form-control" value="朱自清《背影》原文、教案.doc">
+            <img src="images/office_icon/word.png" alt="">
+          </div>
+          <div class="res_input">
+            <label>
+              <b>*</b>资源类型：</label>
+            <div class="dropdown qkydropdown havechoose">
+              <a class="btn btn-default dropdown-toggle auto" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="false">
+                <span class="value">课件</span>
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                <li role="presentation">
+                  <a>课件</a>
+                </li>
+                <li role="presentation">
+                  <a>习题</a>
+                </li>
+                <li role="presentation">
+                  <a>教案</a>
+                </li>
+                <li role="presentation">
+                  <a>学案</a>
+                </li>
+                <li role="presentation">
+                  <a>课程素材</a>
+                </li>
+                <li role="presentation">
+                  <a>其他</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="res_input">
+            <label>
+              <b>*</b>资源属性：</label>
+            <div class=" qkydropdown manychoose">
+              <a class="btn btn-default qkydropdown-toggle auto">
+                <!-- <span class="value">请选择模板</span> -->
+                <input type="text" class=" value " placeholder="请选择资源的属性" readonly>
+                <span class="caret"></span>
+              </a>
+              <div class="qkydropdown-menus clear">
+                <div class="col-sm-2 v1">
+                  <img src="images/timg.gif" alt="" class="qkydropdown-loading hide">
+                  <ul class="qkydropdown-menu ">
+                    <li role="presentation">
+                      <a>小学资源</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-sm-2 v2">
+                  <img src="images/timg.gif" alt="" class="qkydropdown-loading ">
+                  <ul class="qkydropdown-menu ">
+                    <li role="presentation">
+                      <a>语文</a>
+                    </li>
+                    <li role="presentation">
+                      <a>数学</a>
+                    </li>
+                    <li role="presentation">
+                      <a>英语</a>
+                    </li>
+                    <li role="presentation">
+                      <a>科学</a>
+                    </li>
+                    <li role="presentation">
+                      <a>美术</a>
+                    </li>
+                    <li role="presentation">
+                      <a>思想品德</a>
+                    </li>
+                    <li role="presentation">
+                      <a>信息技术</a>
+                    </li>
+                    <li role="presentation">
+                      <a>音乐</a>
+                    </li>
+                    <li role="presentation">
+                      <a>综合实践活动</a>
+                    </li>
+                    <li role="presentation">
+                      <a>书法</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-sm-2 v3">
+                  <img src="images/timg.gif" alt="" class="qkydropdown-loading ">
+                  <ul class="qkydropdown-menu ">
+                    <li role="presentation">
+                      <a>小学语文其他版本收到回复士大夫但是就</a>
+                    </li>
+                    <li role="presentation">
+                      <a>人教版</a>
+                    </li>
+                    <li role="presentation">
+                      <a>山东教育出版社</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-sm-2 v4">
+                  <img src="images/timg.gif" alt="" class="qkydropdown-loading ">
+                  <ul class="qkydropdown-menu ">
+                    <li role="presentation">
+                      <a>一年级全册</a>
+                    </li>
+                    <li role="presentation">
+                      <a>一年级上册</a>
+                    </li>
+                    <li role="presentation">
+                      <a>一年级下册</a>
+                    </li>
+                    <li role="presentation">
+                      <a>二年级上册</a>
+                    </li>
+                    <li role="presentation">
+                      <a>二年级下册</a>
+                    </li>
+                    <li role="presentation">
+                      <a>三年级上册</a>
+                    </li>
+                    <li role="presentation">
+                      <a>三年级下册</a>
+                    </li>
+                    <li role="presentation">
+                      <a>四年级上册</a>
+                    </li>
+                    <li role="presentation">
+                      <a>四年级下册</a>
+                    </li>
+                    <li role="presentation">
+                      <a>五年级上册</a>
+                    </li>
+                    <li role="presentation">
+                      <a>五年级下册</a>
+                    </li>
+                    <li role="presentation">
+                      <a>六年级上册</a>
+                    </li>
+                    <li role="presentation">
+                      <a>六年级下册</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-sm-2 v5">
+                  <img src="images/timg.gif" alt="" class="qkydropdown-loading ">
+                  <ul class=" res_tree ">
+                    <li>
+                      <a class="res_tree_one clear">
+                        <b class="yuan ">
+                          <span class="add">+</span>
+                          <span class="jian">-</span>
+                        </b>
+                        <span class="onespan">第一单元</span>
+                      </a>
+                      <div class="res_leaf open">
+                        <a class="res_tree_two">
+                          <b></b>
+                          <span>第一课 毛泽东的诗</span>
+                        </a>
+                        <a class="res_tree_two">
+                          <b></b>
+                          <span>第二课</span>
+                        </a>
+                        <a class="res_tree_two">
+                          <b></b>
+                          <span>第三课</span>
+                        </a>
+                      </div>
+                    </li>
+                    <li>
+                      <a class="res_tree_one clear">
+                        <b class="yuan ">
+                          <span class="add">+</span>
+                          <span class="jian">-</span>
+                        </b>
+                        <span class="onespan">第二单元</span>
+                      </a>
+                      <div class="res_leaf open">
+                        <a class="res_tree_two">
+                          <b></b>
+                          <span>第一课</span>
+                        </a>
+                        <a class="res_tree_two">
+                          <b></b>
+                          <span>第二课</span>
+                        </a>
+                        <a class="res_tree_two">
+                          <b></b>
+                          <span>第三课</span>
+                        </a>
+                      </div>
+                    </li>
+
+                  </ul>
+                </div>
+                <div class="col-sm-2 v6 fr">
+                  <ul class="qkydropdown-menu chooseon"></ul>
+                  <a class="btn btn-primary  menus_vaule_ok">确定</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="res_input">
+            <label class="clear kuai">标签：
+              <span class="fr">建议每个标签2-5个字</span>
+            </label>
+            <input type="text" class="form-control">
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="res_input">
+            <label class="clear kuai">资源简介：
+              <span class="fr">0/200</span>
+            </label>
+            <textarea class="form-control" rows="5">朱自清《背影》原文、教案.doc</textarea>
+          </div>
+          <div class="res_input">
+            <label class="clear kuai">公开范围：</label>
+            <div class="radio ma0">
+              <label class="radio-qky clear  pl10 select kuai">
+                <a class="radio_a fl">
+                  <b></b>
+                </a>
+                <span class="fl ml5">公共资源
+                  <b>任何人可以检索和阅读</b>
+                </span>
+              </label>
+              <label class="radio-qky clear  pl10 kuai">
+                <a class="radio_a fl">
+                  <b></b>
+                </a>
+                <span class="fl ml5">个人资源
+                  <b>仅自己可见</b>
+                </span>
+              </label>
+              <label class="radio-qky clear  pl10 kuai">
+                <a class="radio_a fl">
+                  <b></b>
+                </a>
+                <span class="fl ml5">校本资源</span>
+              </label>
+              <label class="radio-qky clear  pl10 kuai">
+                <a class="radio_a fl">
+                  <b></b>
+                </a>
+                <span class="fl ml5">区本资源</span>
+              </label>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+  <div class="footer default">全通教育集团（广东）股份有限公司 版权所有 ©2007-2015</div>
+
+
+  <div class="modal fade" id="mycloud" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header clear">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <div class="col-sm-5 fr" style="margin-top:-3px">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="请输入关键字搜索">
+              <span class="input-group-btn">
+                <button class="btn btn-default h2_color" type="button">搜索</button>
+              </span>
+            </div>
+          </div>
+          <h4 class="modal-title" id="group_deleteLabel">我的云盘</h4>
+
+        </div>
+        <div class="modal-body modal_auto pa0">
+          <div class="clear res_cloud_ban2 ml0 mr0 mt0 bor_nt">
+            <div class="col-sm-7 pa0 clear">
+              <a class="res_path">
+                <i class="qkyicon_14">&#xe604;</i>
+              </a>
+              <a class="res_path">文件夹1</a>
+              <a class="res_path">文件夹1-2</a>
+            </div>
+            <div class=" fr pa0">
+              <a class="res_type active">全部</a>
+              <a class="res_type">文档</a>
+              <a class="res_type">图片</a>
+              <a class="res_type">视频</a>
+              <a class="res_type">音乐</a>
+              <a class="res_type">其他</a>
+            </div>
+          </div>
+          <div class=" cloudtable">
+            <table class="table table-condensed  table-hover">
+              <thead>
+                <tr>
+                  <th width="50%">名称</th>
+                  <th>大小</th>
+                  <th>修改日期</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="files">
+                  <td class="res_tablist clear">
+                    <img src="images/office_icon/folder.png" alt="">
+                    <span class="dian3 resname">资源平台</span>
+                  </td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr class="files">
+
+                  <td class="res_tablist">
+                    <img src="images/office_icon/folder.png" alt="">
+                    <span class="dian3 resname">名师工作室</span>
+                  </td>
+
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr class="files">
+
+                  <td class="res_tablist">
+                    <img src="images/office_icon/folder.png" alt="">
+                    <span class="dian3 resname">小学教研活动</span>
+                    <div class="col-sm-10 resname_input">
+                      <div class="input-group">
+                        <input type="text" class="form-control t_c" value="资源平台">
+                        <span class="input-group-btn">
+                          <button class="btn btn-primary" type="button" title="确定">
+                            <i class="qkyicon_14">&#xe619;</i>
+                          </button>
+                        </span>
+                      </div>
+                    </div>
+                  </td>
+                  <td></td>
+                  <td>2016-12-14 16:45:12</td>
+                </tr>
+                <tr class="file">
+                  <td class="res_tablist">
+                    <img src="images/office_icon/mp3.png" alt="">
+                    <span class="dian3 resname">新课标小学英语听力</span>
+                    <div class="col-sm-10 resname_input">
+                      <div class="input-group">
+                        <input type="text" class="form-control t_c" value="资源平台">
+                        <span class="input-group-btn">
+                          <button class="btn btn-primary" type="button" title="确定">
+                            <i class="qkyicon_14">&#xe619;</i>
+                          </button>
+                        </span>
+                      </div>
+                    </div>
+                  </td>
+                  <td>380.91KB</td>
+                  <td>2016-12-14 16:45:12</td>
+                </tr>
+                <tr class="file">
+                  <td class="res_tablist">
+                    <img src="images/office_icon/ppt.png" alt="">
+                    <span class="dian3 resname">小学六年级上册语文第五课詹天佑PPT.ppt</span>
+                    <div class="col-sm-10 resname_input">
+                      <div class="input-group">
+                        <input type="text" class="form-control t_c" value="资源平台">
+                        <span class="input-group-btn">
+                          <button class="btn btn-primary" type="button" title="确定">
+                            <i class="qkyicon_14">&#xe619;</i>
+                          </button>
+                        </span>
+                      </div>
+                    </div>
+                  </td>
+                  <td>467.97KB</td>
+                  <td>2016-12-14 16:45:12</td>
+                </tr>
+                <tr class="file">
+                  <td class="res_tablist">
+                    <img src="images/office_icon/word.png" alt="">
+                    <span class="dian3 resname">人教版六上——詹天佑.doc</span>
+                    <div class="col-sm-10 resname_input">
+                      <div class="input-group">
+                        <input type="text" class="form-control t_c" value="资源平台">
+                        <span class="input-group-btn">
+                          <button class="btn btn-primary" type="button" title="确定">
+                            <i class="qkyicon_14">&#xe619;</i>
+                          </button>
+                        </span>
+                      </div>
+                    </div>
+                  </td>
+                  <td>467.97KB</td>
+                  <td>2016-12-14 16:45:12</td>
+                </tr>
+                <tr class="file">
+                  <td class="res_tablist">
+                    <img src="images/office_icon/word.png" alt="">
+                    <span class="dian3 resname">人教版六上——索溪谷的野.doc</span>
+                    <div class="col-sm-10 resname_input">
+                      <div class="input-group">
+                        <input type="text" class="form-control t_c" value="资源平台">
+                        <span class="input-group-btn">
+                          <button class="btn btn-primary" type="button" title="确定">
+                            <i class="qkyicon_14">&#xe619;</i>
+                          </button>
+                        </span>
+                      </div>
+                    </div>
+                  </td>
+                  <td>467.97KB</td>
+                  <td>2016-12-14 16:45:12</td>
+                </tr>
+                <tr class="file">
+                  <td class="res_tablist">
+                    <img src="images/office_icon/word.png" alt="">
+                    <span class="dian3 resname">人教版六上——山中访友.doc</span>
+                    <div class="col-sm-10 resname_input">
+                      <div class="input-group">
+                        <input type="text" class="form-control t_c" value="资源平台">
+                        <span class="input-group-btn">
+                          <button class="btn btn-primary" type="button" title="确定">
+                            <i class="qkyicon_14">&#xe619;</i>
+                          </button>
+                        </span>
+                      </div>
+                    </div>
+                  </td>
+                  <td>467.97KB</td>
+                  <td>2016-12-14 16:45:12</td>
+                </tr>
+              </tbody>
+            </table>
+
+          </div>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary">确定</button>
+          <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--模块化js-->
+  <script src="js/sea.js"></script>
+  <script src="js/seaconfig2.0.js"></script>
+  <script>
+    seajs.use(["jq", "bs", "nav", "rach", "dw"], function (j, b, n, rach) {
+      var qt = [{
+          name: "首页",
+          attrcont: "href='index.html'",
+          isactive: false
+        },
+        {
+          name: "公共资源库",
+          attrcont: "href='index_com.html'",
+          isactive: false
+        },
+        {
+          name: "我的资源库",
+          attrcont: "href='index_my.html'",
+          isactive: true
+        },
+        {
+          name: "云盘",
+          attrcont: "href='index_cloud.html'",
+          isactive: false
+        }
+      ];
+      $("#qkynav").qkynav({
+        navli_j: qt
+      });
+      rach.rach_run(function (t) {}, function (t) {});
+      
+//弹框云盘交互
+      $(".cloudtable tbody tr.file").click(function () {
+        $(this).addClass("active").siblings().removeClass("active");
+      });
+
+      
+//多选下拉开启和结束，以及等级点击下级加载开
+      $(".qkydropdown.manychoose").on('click', ".qkydropdown-toggle", function () {
+        var value_box = $(this).find(".value").first();
+        $(this).parent().find(".qkydropdown-menus").slideToggle(200);
+        $(this).parent().find(".qkydropdown-menus").on("click", "ul.qkydropdown-menu li a", function () {
+          var vbox = $(this).parents(".qkydropdown-menu").parent();
+          if (!vbox.hasClass("v6")) {
+            $(this).parent().addClass("active").siblings().removeClass("active");
+            value_box.val(invalues()).attr("title", invalues());
+            for (var vv = 1; vv <= 4; vv++) {
+              if (vbox.hasClass("v" + vv)) {
+                menu_am($(this), ".v" + (vv + 1));
+              }
+            }
+          }
+        });
+      });
+      $(document).on("click", ":not('.manychoose')", function () {
+        $(".qkydropdown-menus").slideUp(200);
+      })
+      $(".manychoose").on("click", function (event) {
+        event.stopPropagation();
+      });
+
+      //加载下级菜单动画，获取下级菜单数据在于这里添加
+      function menu_am(id, showid) {
+        id.parents(".qkydropdown-menus").find(showid).fadeIn(500, function () {
+          id.parents(".qkydropdown-menus").find(showid).find(".qkydropdown-loading").fadeOut(100);
+        });
+      }
+
+//第5等级的交互
+      $(".res_tree_one").click(function () {
+        $(this).find("b").toggleClass("yuan").parents("li").find(".res_leaf").slideToggle(200);
+      });
+      $(".res_tree li").each(function (i) {
+        $(this).find(".res_leaf .res_tree_two").each(function (j) {
+          $(this).attr("isc", "no").attr("ids", i + "_" + j);
+        })
+      });
+
+      $(".qkydropdown-menus").on("click", ".res_tree_two", function () {
+        var value_box = $(this).parents(".manychoose").find(".value").first();
+        if ($(this).attr("isc") == "no") {
+          $(this).addClass("active");
+          $(".chooseon").append('<li ids="' + $(this).attr("ids") + '"><a>['+$(this).parents("li").find(".onespan").html() + $(this).html() +
+            ']</a> <i class="qkyicon_14 removeon">&#xe618;</i> </li>');
+          $(this).attr("isc", "yes");
+
+        } else {
+          $(this).removeClass("active");
+          $(".chooseon li[ids='" + $(this).attr("ids") + "']").remove();
+          $(this).attr("isc", "no");
+        }
+        value_box.val(invalues()).attr("title", invalues());
+      });
+
+      
+//下拉多选循环获取选中的值，点一次重新全部获取一边再返回value输入框
+      function invalues() {
+        var values = "";
+        var va = "";
+        $(".qkydropdown-menu").each(function (i) {
+          values += $(this).find("li.active a").text() + " ";
+        });
+        $(".res_tree_two.active").each(function () {
+          va += "(" + $(this).parent().parent().find(".res_tree_one").find(".onespan").text() + "-" + $(this).find(
+            "span").text() + ") ";
+        });
+
+        return values + va;
+      }
+
+      //确认按钮事件
+      $(".menus_vaule_ok").click(function () {
+        $(".qkydropdown-menus").slideUp(200);
+      });
+
+      //第6级的交互，跟第5级有联系
+      $(".chooseon").on("click", "li i", function () {
+        $(this).parent().remove();
+        $(".res_tree_two[ids='" + $(this).parent().attr("ids") + "']").removeClass("active").attr("isc", "no");
+        console.log(invalues());
+        $(".qkydropdown.manychoose .qkydropdown-toggle .value").val(invalues()).attr("title", invalues());
+      });
+
+
+    });
+  </script>
+</body>
+
+</html>

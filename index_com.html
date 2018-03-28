@@ -32,7 +32,7 @@
               <li role="presentation" class="active"><a href="#">公共资源库</a></li>
               <li role="presentation"><a href="#">校本资源库</a></li>
               <li role="presentation"><a href="#">区本资源库</a></li>
-            </ul>
+          </ul>
             <div class="qkycadr bor_nt res_library comku clear mb20">
               <div class="clear res_libname">
                   <label class="fl"><span>小学</span><span>语文</span><span>人教版</span><span>一年级上册</span></label> <a class="btn btn-primary fr res_libchoose_btn">切换教材</a>   
@@ -88,7 +88,7 @@
                 <div class="res_tree_title">全部章节</div>
                 <ul class="res_tree">
                   <li>
-                    <a class="res_tree_one clear"> <b class="fr yuan r45">+</b> 第一单元</a>
+                    <a class="res_tree_one clear"> <b class=" yuan"><span class="add">+</span><span class="jian">-</span></b> 第一单元</a>
                     <div class="res_leaf open">
                       <a class="res_tree_two"><b></b>第一课</a>
                       <a class="res_tree_two"><b></b>第二课</a>
@@ -96,7 +96,7 @@
                     </div>
                   </li>
                   <li>
-                      <a class="res_tree_one clear"> <b>+</b> 第二单元</a>
+                      <a class="res_tree_one clear"> <b><span class="add">+</span><span class="jian">-</span></b> 第二单元</a>
                       <div class="res_leaf">
                         <a class="res_tree_two"><b></b>第一课</a>
                         <a class="res_tree_two"><b></b>第二课</a>
@@ -104,7 +104,7 @@
                       </div>
                   </li>
                   <li>
-                      <a class="res_tree_one clear"> <b>+</b> 第三单元</a>
+                      <a class="res_tree_one clear"> <b><span class="add">+</span><span class="jian">-</span></b> 第三单元</a>
                       <div class="res_leaf">
                         <a class="res_tree_two"><b></b>第一课</a>
                         <a class="res_tree_two"><b></b>第二课</a>
@@ -112,7 +112,7 @@
                       </div>
                     </li>
                     <li>
-                        <a class="res_tree_one clear"> <b>+</b> 第四单元</a>
+                        <a class="res_tree_one clear"> <b><span class="add">+</span><span class="jian">-</span></b> 第四单元</a>
                         <div class="res_leaf">
                           <a class="res_tree_two"><b></b>第一课</a>
                           <a class="res_tree_two"><b></b>第二课</a>
@@ -120,7 +120,7 @@
                         </div>
                     </li>
                     <li>
-                        <a class="res_tree_one clear"> <b>+</b> 第五单元</a>
+                        <a class="res_tree_one clear"> <b><span class="add">+</span><span class="jian">-</span></b> 第五单元</a>
                         <div class="res_leaf">
                           <a class="res_tree_two"><b></b>第一课</a>
                           <a class="res_tree_two"><b></b>第二课</a>
@@ -128,7 +128,7 @@
                         </div>
                       </li>
                       <li>
-                          <a class="res_tree_one clear"> <b>+</b> 第六单元</a>
+                          <a class="res_tree_one clear"> <b><span class="add">+</span><span class="jian">-</span></b> 第六单元</a>
                           <div class="res_leaf">
                             <a class="res_tree_two"><b></b>第一课</a>
                             <a class="res_tree_two"><b></b>第二课</a>
@@ -182,7 +182,7 @@
                     <span class="fr co_93">共<b>0</b>条资源</span>
                   </div>
 
-                  <div class="res_listbox">
+                  <div class="res_listbox open">
 
                   <div class="res_list">
                     <div class="clear pt5 pr10">
@@ -304,7 +304,19 @@
                             </span>
                           </div>
                         </div>
-
+                        <div class="qkypage  page_center pt15 pb10"> 
+                          <ul class="nav nav-pills"> 
+                              <li class="disabled page_prv"><a href="#">上一页</a></li>
+                              <li class="active"><a href="#">1</a></li>
+                              <li><a href="#">2</a></li>
+                              <li><a href="#">...</a></li>
+                              <li><a href="#">4</a></li>
+                              <li><a href="#">5</a></li>
+                              <li class="page_next"><a href="#">下一页</a></li>
+                              <li class="form-group mb0 page_input"><input type="text" class="form-control" placeholder="输入页面"></li>
+                              <li class="page_input"><a class="btn btn-default">GO</a></li>
+                          </ul>
+                      </div>
                   </div>
               </div>
               
@@ -329,7 +341,7 @@
        $(".res_libchoose_box").slideToggle(200);
      });
      $(".res_tree_one").click(function(){
-       $(this).find("b").toggleClass("r45").toggleClass("yuan").toggleClass("fr").parents("li").find(".res_leaf").slideToggle(200);
+       $(this).find("b").toggleClass("yuan").parents("li").find(".res_leaf").slideToggle(200);
      });
      rach.rach_run(function(t){},function(t){});	
      $(".nav li").click(function(){
