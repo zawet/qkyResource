@@ -58,17 +58,17 @@
 }
 
 @font-face {
-  font-family: 'qkyres';  /* project id 599419 */
-  src: url('//at.alicdn.com/t/font_599419_325x8xox4k5ljtt9.eot');
-  src: url('//at.alicdn.com/t/font_599419_325x8xox4k5ljtt9.eot?#iefix') format('embedded-opentype'),
-  url('//at.alicdn.com/t/font_599419_325x8xox4k5ljtt9.woff') format('woff'),
-  url('//at.alicdn.com/t/font_599419_325x8xox4k5ljtt9.ttf') format('truetype'),
-  url('//at.alicdn.com/t/font_599419_325x8xox4k5ljtt9.svg#iconfont') format('svg');
+  font-family: 'qkyress';  /* project id 599419 */
+  src: url('//at.alicdn.com/t/font_599419_7ju7297z828rggb9.eot');
+  src: url('//at.alicdn.com/t/font_599419_7ju7297z828rggb9.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_599419_7ju7297z828rggb9.woff') format('woff'),
+  url('//at.alicdn.com/t/font_599419_7ju7297z828rggb9.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_599419_7ju7297z828rggb9.svg#iconfont') format('svg');
 
  
 }
 @font-face {
-  font-family: 'qkyress';  /* project id 599419 */
+  font-family: 'qkyres';  /* project id 599419 */
   src: url('../iconfont/res/iconfont.eot'); /* IE9*/
   src: url('../iconfont/res/iconfont.eot#iefix') format('embedded-opentype'), /* IE6-IE8 */
   url('../iconfont/res/iconfont.woff') format('woff'), /* chrome, firefox */
